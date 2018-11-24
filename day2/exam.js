@@ -78,20 +78,21 @@
 // window.addEventListener("online", handleOnLine);
 
 const title = document.querySelector("#title");
-const CLICKED_CLASS = "clicked!"
+const CLICKED_CLASS = "clicked!";
 
 function handleClick() {
-    // const hasClass = title.classList.contains(CLICKED_CLASS);
-    // if (!hasClass) {
-    //     title.classList.add(CLICKED_CLASS);
-    // } else {
-    //     title.classList.remove(CLICKED_CLASS);
-    // }
-    title.classList.toggle(CLICKED_CLASS);
+  // const hasClass = title.classList.contains(CLICKED_CLASS);
+  // if (!hasClass) {
+  //     title.classList.add(CLICKED_CLASS);
+  // } else {
+  //     title.classList.remove(CLICKED_CLASS);
+  // }
+  // 위의 모든것을 toggle이 해준다.
+  title.classList.toggle(CLICKED_CLASS);
 }
 
 function init() {
-    title.addEventListener("click", handleClick);
+  title.addEventListener("click", handleClick);
 }
 
 init();
